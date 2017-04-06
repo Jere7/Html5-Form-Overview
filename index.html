@@ -25,7 +25,12 @@
       <form action="" method="post" name="experiment"> 
 
         <label for="element">Form Element</label>
-        <input type="text" name="element" pattern="[A-Za-z]{7}" placeholder="Enter your value"  autofocus required>
+        <datalist id="software">
+            <option value="#ffcc00"/>
+            <option value="#cccccc"/>
+            <option value="#f1f1f1"/>
+        </datalist>
+        <input type="color" name="element" list="software">
 
         <input type="submit" name="btn" id="btn" value="submit">     
 
